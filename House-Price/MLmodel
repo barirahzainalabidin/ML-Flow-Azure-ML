@@ -1,0 +1,66 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.20
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.5.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/ai-ml-automl:7
+  azureml.engine: automl
+mlflow_version: 2.9.2
+model_size_bytes: 1261799
+model_uuid: 88325d50e2b442609dcd1015a9ce8269
+run_id: house-price-1_33
+signature:
+  inputs: '[{"type": "integer", "name": "Id"}, {"type": "integer", "name": "MSSubClass"},
+    {"type": "string", "name": "MSZoning"}, {"type": "float", "name": "LotFrontage"},
+    {"type": "integer", "name": "LotArea"}, {"type": "string", "name": "Street"},
+    {"type": "string", "name": "Alley"}, {"type": "string", "name": "LotShape"}, {"type":
+    "string", "name": "LandContour"}, {"type": "string", "name": "Utilities"}, {"type":
+    "string", "name": "LotConfig"}, {"type": "string", "name": "LandSlope"}, {"type":
+    "string", "name": "Neighborhood"}, {"type": "string", "name": "Condition1"}, {"type":
+    "string", "name": "Condition2"}, {"type": "string", "name": "BldgType"}, {"type":
+    "string", "name": "HouseStyle"}, {"type": "integer", "name": "OverallQual"}, {"type":
+    "integer", "name": "OverallCond"}, {"type": "integer", "name": "YearBuilt"}, {"type":
+    "integer", "name": "YearRemodAdd"}, {"type": "string", "name": "RoofStyle"}, {"type":
+    "string", "name": "RoofMatl"}, {"type": "string", "name": "Exterior1st"}, {"type":
+    "string", "name": "Exterior2nd"}, {"type": "string", "name": "MasVnrType"}, {"type":
+    "float", "name": "MasVnrArea"}, {"type": "string", "name": "ExterQual"}, {"type":
+    "string", "name": "ExterCond"}, {"type": "string", "name": "Foundation"}, {"type":
+    "string", "name": "BsmtQual"}, {"type": "string", "name": "BsmtCond"}, {"type":
+    "string", "name": "BsmtExposure"}, {"type": "string", "name": "BsmtFinType1"},
+    {"type": "float", "name": "BsmtFinSF1"}, {"type": "string", "name": "BsmtFinType2"},
+    {"type": "float", "name": "BsmtFinSF2"}, {"type": "float", "name": "BsmtUnfSF"},
+    {"type": "float", "name": "TotalBsmtSF"}, {"type": "string", "name": "Heating"},
+    {"type": "string", "name": "HeatingQC"}, {"type": "boolean", "name": "CentralAir"},
+    {"type": "string", "name": "Electrical"}, {"type": "integer", "name": "1stFlrSF"},
+    {"type": "integer", "name": "2ndFlrSF"}, {"type": "integer", "name": "LowQualFinSF"},
+    {"type": "integer", "name": "GrLivArea"}, {"type": "float", "name": "BsmtFullBath"},
+    {"type": "float", "name": "BsmtHalfBath"}, {"type": "integer", "name": "FullBath"},
+    {"type": "integer", "name": "HalfBath"}, {"type": "integer", "name": "BedroomAbvGr"},
+    {"type": "integer", "name": "KitchenAbvGr"}, {"type": "string", "name": "KitchenQual"},
+    {"type": "integer", "name": "TotRmsAbvGrd"}, {"type": "string", "name": "Functional"},
+    {"type": "integer", "name": "Fireplaces"}, {"type": "string", "name": "FireplaceQu"},
+    {"type": "string", "name": "GarageType"}, {"type": "float", "name": "GarageYrBlt"},
+    {"type": "string", "name": "GarageFinish"}, {"type": "float", "name": "GarageCars"},
+    {"type": "float", "name": "GarageArea"}, {"type": "string", "name": "GarageQual"},
+    {"type": "string", "name": "GarageCond"}, {"type": "string", "name": "PavedDrive"},
+    {"type": "integer", "name": "WoodDeckSF"}, {"type": "integer", "name": "OpenPorchSF"},
+    {"type": "integer", "name": "EnclosedPorch"}, {"type": "integer", "name": "3SsnPorch"},
+    {"type": "integer", "name": "ScreenPorch"}, {"type": "integer", "name": "PoolArea"},
+    {"type": "string", "name": "PoolQC"}, {"type": "string", "name": "Fence"}, {"type":
+    "string", "name": "MiscFeature"}, {"type": "integer", "name": "MiscVal"}, {"type":
+    "integer", "name": "MoSold"}, {"type": "integer", "name": "YrSold"}, {"type":
+    "string", "name": "SaleType"}, {"type": "string", "name": "SaleCondition"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-10-25 13:20:23.923121'
